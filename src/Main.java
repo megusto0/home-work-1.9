@@ -1,5 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Author author1 = new Author("Daron", "Acemoglu");
+        Author author2 = new Author("Joanne", "Rowling");
+        Author author3 = new Author("Joanne", "Rowling");
+
+        Book book1 = new Book("why nations fail", author1, 2012);
+        Book book2 = new Book("harry potter", author2, 1996);
+        book2.setPublishYear(1997);
+
+        System.out.println(author1);
+        System.out.println(book1);
+        System.out.println(author2.equals(author3));
     }
 }
